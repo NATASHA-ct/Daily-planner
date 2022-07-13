@@ -4,8 +4,6 @@ html {
   width: 100%;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  
-  
 }
 
 body {
@@ -21,48 +19,45 @@ body {
   padding: 0;
 }
 
-
-header{
- width: 100%;
- background-color: black;
- padding:20px;
- position: fixed;
- top: 0;
+header {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  position: fixed;
+  top: 0;
 }
 
-.details{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    margin-top:10em ;
-    margin-bottom: 2em;
-    border: 0.5px solid #ddd9d9dd;
-    box-shadow: 4px 5px #e5e6e9;
-
-  }
-
-.main-heading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    padding-left: 2%;
-    font-style: normal;
-    color: #696969eb;
-    font-size: medium;
-    border-bottom: 1px solid #c1bcbcdd;
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10em;
+  margin-bottom: 2em;
+  border: 0.5px solid #ddd9d9dd;
+  box-shadow: 4px 5px #e5e6e9;
 }
 
-.main-heading span{
+.main-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  padding-left: 2%;
+  font-style: normal;
+  color: #696969eb;
+  font-size: medium;
+  border-bottom: 1px solid #c1bcbcdd;
+}
+
+.main-heading span {
   color: #9a9898dd;
-  font-size:large;
+  font-size: large;
   text-align: right;
   margin-right: 3%;
 }
 
-
-.Add-list input{
+.Add-list input {
   width: 100%;
   font-style: italic;
   padding: 10px;
@@ -71,12 +66,12 @@ header{
   border-bottom: 1px solid #c1bcbcdd;
 }
 
-.Add-list ::-webkit-input-placeholder{
+.Add-list ::-webkit-input-placeholder {
   font-style: italic;
   padding-left: 1%;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
 }
@@ -85,9 +80,9 @@ header{
   display: flex;
   align-items: center;
   padding: 5px;
-  gap:1%;
-  padding-left:2% ;
-  border-bottom:  1px solid #c1bcbcdd;
+  gap: 1%;
+  padding-left: 2%;
+  border-bottom: 1px solid #c1bcbcdd;
 }
 
 .list-item input {
@@ -98,23 +93,22 @@ header{
   color: #9a9898dd;
 }
 
-.list-item label{
+.list-item label {
   width: 90%;
   font-size: small;
 }
 
-.clearBtn{
-  font-size:small;
+.clearBtn {
+  font-size: small;
   padding: 10px;
-  color:#6f6c6cdd;
+  color: #6f6c6cdd;
   border: none;
 }
 
-footer{
-  width:100%;
+footer {
+  width: 100%;
   background-color: black;
-  padding:20px;
+  padding: 20px;
   position: fixed;
   bottom: 0;
 }
-

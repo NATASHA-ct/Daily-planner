@@ -1,30 +1,14 @@
-import _ from "lodash";
-import "./style.css";
-
-// Array of Objects with projects area properties
-const listItems = [
-  {
-    description: "wash the dishes",
-    completed: "unchecked",
-    index: 0,
-  },
-
-  {
-    description: "complete To Do list project",
-    completed:"unchecked",
-    index: 1,
-  },
-  
-];
+// import _ from 'lodash';
+import './style.css';
+import listItems from '../modules/data.js';
 
 const toDoList = document.querySelector('.main');
 
 const TASKS = () => {
-  let taskList = "";
+  let taskList = '';
 
-  for (let taskIndex = 0; taskIndex < listItems.length; 
-  taskIndex += 1) {
-
+  for (let taskIndex = 0; taskIndex < listItems.length;
+    taskIndex += 1) {
     const infor = `
         <div class="list-item" > 
 
@@ -36,10 +20,8 @@ const TASKS = () => {
         </div>
             `;
     taskList += infor;
-   
   }
-   
+
   toDoList.innerHTML = taskList;
-  console.log(toDoList);
 };
 TASKS();
