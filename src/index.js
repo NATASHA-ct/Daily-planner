@@ -1,27 +1,17 @@
-// import _ from 'lodash';
-import './style.css';
-import listItems from '../modules/data.js';
+import './index.css';
 
-const toDoList = document.querySelector('.main');
+import { getToDos, addToDo, createToDo } from '../mods/addremove.js';
 
-const TASKS = () => {
-  let taskList = '';
+const input = document.querySelector('.desc');
 
-  for (let taskIndex = 0; taskIndex < listItems.length;
-    taskIndex += 1) {
-    const infor = `
-        <div class="list-item" > 
-
-        <input type="checkbox" name="task" value="task" ${listItems[taskIndex].completed}>  
-        <label for="item">${listItems[taskIndex].description}</label>
-
-        <span class="material-symbols-outlined">
-        more_vert</span>            
-        </div>
-            `;
-    taskList += infor;
+getToDos().forEach(createToDo);
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    const completed = false;
+    const description = document.querySelector('.desc').value;
+    const index = getToDos().length + 1;
+    const newTodo = createToDo({ description, completed, index });
+    addToDo(newTodo);
+    input.value = '';
   }
-
-  toDoList.innerHTML = taskList;
-};
-TASKS();
+});
