@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(42, 42, 42);
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(124deg, rgb(73 134 144) 0%, rgb(15 70 130) 79%);
+  height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.todo_folder {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: rgb(166, 168, 168);
+  margin: 0 auto;
+  margin-top: 10em;
+  border: none;
+  border-radius: 0.5%;
+  box-shadow: 9px 15px #04042261;
+}
+
+.title_class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_class h1 {
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desc {
+  padding: 15px 20px;
+  border: none;
+  color: #1c1b1b;
+  font-style: italic;
+  font-size: 18px;
+}
+
+li {
+  /* width: 100%; */
+  display: flex;
+  gap: 1em;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.todo_list li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn_remove {
+  position: absolute;
+  right: 0;
+}
+
+.reload {
+  padding-right: 0.2em;
+}
+
+.checkbox {
+  height: 18px;
+  width: 20px;
+  padding: 10px;
+}
+
+.content {
+  cursor: text;
+  width: 90%;
+  padding: 5px;
+}
+
+.bin {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.clear {
+  font-size: large;
+  padding: 20px;
+  border: none;
+  background: linear-gradient(124deg, rgb(66 81 84) 0%, rgb(84 100 118) 79%);
+}
