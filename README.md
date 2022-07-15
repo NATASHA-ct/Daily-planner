@@ -16,6 +16,10 @@ In this project I implemented the following functionalities::
 
 [Live Demo Link]()
 
+#Project screenshot
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/106079814/179227330-7aacb238-02f1-4626-940a-e4ddc7e34b1e.png">
+
+
 
 ### Prerequisites
 -Github flow knowledge.
