@@ -1,9 +1,9 @@
 import './index.css';
 
 import { getToDos, addToDo, createToDo } from '../mods/addremove.js';
-import clearToDoItems from "../mods/interactiveness.js";
+import clearToDoItems from '../mods/interactiveness.js';
 
-const clearCompleted = document.querySelector(".clear");
+const clearCompleted = document.querySelector('.clear');
 const input = document.querySelector('.desc');
 
 getToDos().forEach(createToDo);
@@ -18,4 +18,4 @@ input.addEventListener('keypress', (e) => {
   }
 });
 
-clearCompleted.addEventListener("click", clearToDoItems);
+clearCompleted.addEventListener('click', clearToDoItems);
