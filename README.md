@@ -14,7 +14,7 @@ In this project I implemented the following functionalities::
 
 ## Live Demo (available)
 
-[Live Demo Link]()
+[Live Demo Link](https://natasha-ct.github.io/To-Do-list-webapp/dist/)
 
 #Project screenshot
 <img width="959" alt="image" src="https://user-images.githubusercontent.com/106079814/179227330-7aacb238-02f1-4626-940a-e4ddc7e34b1e.png">
